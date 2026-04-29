@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ирина Трубчик](https://up.htmlacademy.ru/htmlcss-individual/3/user/314909).
-* Наставник: `Неизвестно`.
+* Наставник: [Дина Шарипова](https://htmlacademy.ru/profile/id1418957).
 
 ---
 
