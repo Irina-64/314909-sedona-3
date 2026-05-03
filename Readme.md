@@ -14,6 +14,19 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 ### 2.45. Разметка всех страниц
 
 #### Выполнена разметка всех страниц (Главная и Каталог)
+
+#### Добавлены в вёрстку атрибуты:
+
+data-test="header" для шапки
+data-test="main" для основного содержания
+data-test="hero" для блока герой (крупный блок в начале страницы, с крупной фотографией товара и большим заголовком)
+data-test="advantages" для блока преимуществ
+data-test="search" для поиска
+data-test="filter" для блока c фильтрами на странице с каталогом
+data-test="catalog" для каталога
+data-test="subscribe" для блока подписки на рассылку
+data-test="footer" для подвала
+
 ---
 
 <a href="https://htmlacademy.ru/intensive/htmlcss"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github-2.png"></a>
