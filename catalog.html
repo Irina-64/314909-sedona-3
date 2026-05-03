@@ -38,7 +38,7 @@
       </nav>
     </header>
 
-    <main>
+    <main data-test="main">
       <section class="head-main">
           <h1 class="catalog-title">Гостиницы седоны</h1>
           <ul class="catalog-navigation">
@@ -53,7 +53,7 @@
           </ul>
 
         <!-- Фильтр каталога -->
-        <form class="catalog-filter" action="#" method="get">
+        <form class="catalog-filter" action="#" method="get" data-test="filter">
           <fieldset class="catalog-filter-checkbox">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
@@ -131,7 +131,7 @@
       </section>
 
 <!-- Вывод поиска -->
-      <section class="inner-search">
+      <section class="inner-search" data-test="catalog">
 
         <section class="search">
           <p class="found-hotel">Найдено гостиниц:
@@ -254,7 +254,7 @@
           </ul>
         </section>
       </section>
-        <section class="subscribe">
+        <section class="subscribe" data-test="subscribe">
           <div class="subscribe-block">
             <h2 class="header-block-two">Подпишитесь на рассылку</h2>
             <p class="description-block">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
@@ -266,7 +266,7 @@
         </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <div class="social-container">
         <ul class="social-list">
           <li class="social-item">
