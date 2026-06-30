@@ -18,13 +18,13 @@
         <nav class="navigation-page">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link link-current" href="#" aria-current="page">Главная</a>
+              <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Cедоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="./catalog.html">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <div class="user-container">
@@ -78,7 +78,7 @@
               <h3 class="advantages-block-title medium-stripe">Красивая<br> дорога</h3>
               <p class="advantages-block-description">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
             </li>
-            <li class="advantages-item advantages-light-block block-without-picture">
+            <li class="advantages-item advantages-light-block block_without_picture">
               <h3 class="advantages-block-title light-stripe">Мало<br> туристов</h3>
               <p class="advantages-block-description">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
@@ -118,7 +118,7 @@
           <p class="search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
             гостиниц в
             Седоне</p>
-          <a class="open-modal-btn button-big" href="#modal-search">Поиск гостиницы в Седоне</a>
+          <button class="open-modal-btn button-big" type="button">Поиск гостиницы в Седоне</button>
         </section>
       </main>
       <footer class="page-footer">
@@ -181,12 +181,13 @@
         </section>
       </footer>
     </div>
-    <div class="modal-container" id="modal-search" data-test="modal">
-      <a class="modal-close-overlay" href="#" aria-hidden="true" tabindex="-1"></a>
+    <!-- Модальное окно "Поиск гостиницы в Седоне" -->
+    <!-- Класс modal-close-button закрывает модальное окно  -->
+    <div class="modal-container" data-test="modal">
       <div class="modal modal-search">
-        <a class="modal-close-button" href="#">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
-        </a>
+        </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
