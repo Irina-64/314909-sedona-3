@@ -231,6 +231,19 @@ input[type="number"] {
   background-position: center;
 }
 
+.navigation-link-user:hover {
+  opacity: 0.6;
+}
+
+.navigation-link-user:focus-visible {
+  outline: 3px solid #83b3d3;
+  outline-offset: -3px;
+}
+
+.navigation-link-user:active {
+  opacity: 0.3;
+}
+
 .navigation-link-search {
   background-image: url("../img/header/search.svg");
 }
@@ -245,15 +258,20 @@ input[type="number"] {
   position: absolute;
   top: 11px;
   right: 4px;
-  padding: 5px;
-  padding-left: 4px;
-  font-weight: inherit;
+
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  padding: 5px 0;
+
   font-family: inherit;
   font-style: inherit;
+  font-weight: inherit;
   font-size: 10px;
   line-height: 10px;
   text-align: center;
   color: #ffffff;
+
   background-color: #7db54f;
   border-radius: 50%;
 }
@@ -289,11 +307,15 @@ input[type="number"] {
   display: block;
   width: 160px;
   box-sizing: border-box;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  min-height: 36px;
+
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 28px;
   padding-right: 28px;
+
   font-family: inherit;
   font-style: inherit;
   font-weight: 700;
@@ -712,10 +734,26 @@ h1.catalog-title {
   padding: 0;
   margin-bottom: 40px;
   gap: 28px;
+  background-image: none;
+  list-style: none;
+}
+
+.breadcrumbs-item {
+  position: relative;
+  min-width: 13px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  position: absolute;
+  top: 50%;
+  right: -18px;
+  width: 8px;
+  height: 11px;
   background-image: url("../img/breadcrumps/arrow-logo.svg");
   background-repeat: no-repeat;
-  background-position: center left 23px;
-  list-style: none;
+  background-position: center;
+  transform: translateY(-50%);
+  content: "";
 }
 
 .breadcrumbs-link {
@@ -739,9 +777,6 @@ a.breadcrumbs-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.breadcrumbs-item {
-  min-width: 13px;
-}
 
 /*  Перечень фильтров для поиска отелей   */
 
@@ -948,6 +983,7 @@ a.breadcrumbs-link:active {
 
 .price-filter {
   position: relative;
+  display: block;
 }
 
 .price-track-scale {
