@@ -105,14 +105,33 @@
             <fieldset class="price-filter-field">
               <legend class="filter-list-title">Стоимость, ₽:</legend>
               <div class="price-filter-input-wrapper">
-                <div class="price-filter">
-                  <input class="price-filter-input price-filter-input-min" type="number" name="min-cost" value="0" min="0" placeholder="0">
-                  <span class="price-filter-placeholder">от</span>
-                </div>
-                <div class="price-filter">
-                  <input class="price-filter-input price-filter-input-max" type="number" name="max-cost" value="9000" min="0" placeholder="9000">
-                  <span class="price-filter-placeholder">до</span>
-                </div>
+                  <label class="price-filter">
+    <span class="visually-hidden">Минимальная стоимость</span>
+    <input
+      class="price-filter-input price-filter-input-min"
+      id="min-cost"
+      type="number"
+      name="min-cost"
+      value="0"
+      min="0"
+      placeholder="0"
+    >
+    <span class="price-filter-placeholder" aria-hidden="true">от</span>
+  </label>
+
+  <label class="price-filter">
+    <span class="visually-hidden">Максимальная стоимость</span>
+    <input
+      class="price-filter-input price-filter-input-max"
+      id="max-cost"
+      type="number"
+      name="max-cost"
+      value="9000"
+      min="0"
+      placeholder="9000"
+    >
+    <span class="price-filter-placeholder" aria-hidden="true">до</span>
+  </label>
               </div>
               <div class="price-track">
                 <div class="price-track-scale">
